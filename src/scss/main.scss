@@ -1,0 +1,61 @@
+// @import "base";
+// You need the base only when you are not using bootstrap. In that case, go to _base.scss
+// to customize it as you may want.
+
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./style";
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Maven+Pro:wght@400;500;600;800;900&family=Niconne&display=swap");
+
+// Write your sass code here or import partials
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #fde6b485;
+  color: rgba(39, 37, 37, 0.718);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  color: snow;
+}
+
+h1,
+h2,
+h5 {
+  font-family: "Niconne";
+}
+
+h1 {
+  color: rgba(88, 8, 138, 0.698);
+  font-size: clamp(4.8rem, 7vw, 8.5rem);
+  font-weight: bolder;
+}
+h2 {
+  font-size: 5.2rem;
+  color: rgba(88, 8, 138, 0.413);
+  margin: 0;
+}
+
+.sec-2 h5 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgba(88, 8, 138, 0.698);
+  border: 2px dashed grey;
+}
+.sec-2 a {
+  text-decoration: none;
+}
