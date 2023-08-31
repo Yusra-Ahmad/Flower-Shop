@@ -2,16 +2,22 @@
   background-color: rgba(75, 6, 121, 0.375);
   height: 45vh;
   width: 50%;
+  @include media-breakpoint-down(lg){
+    width: 100%;
+  }
 }
 
 aside {
-  background-image: url(../../img/header.jpg);
+  background-image: url(../img/header.jpg);
   width: 50%;
   height: 45vh;
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @include media-breakpoint-down(lg){
+    width: 100%;
+  }
 }
 
 header {
@@ -26,6 +32,10 @@ nav ul {
   justify-content: flex-start;
   padding: 1rem;
   gap: 2rem;
+  @include media-breakpoint-down(lg){
+    font-size: 1.2rem;
+    
+  }
 }
 ul a:hover {
   font-size: 2rem;
@@ -44,6 +54,9 @@ ul a {
 h1 {
   text-align: center;
   margin: 3rem;
+  @include media-breakpoint-down(lg){
+    margin: 1rem;
+  }
 }
 h3 {
   text-align: center;
@@ -63,6 +76,9 @@ button {
   color: white;
   border: none;
   border-radius: 50px;
+  @include media-breakpoint-down(lg){
+    right: 10%;
+  }
 }
 button:hover {
   cursor: pointer;
@@ -129,7 +145,9 @@ main {
   .sec-3 {
     display: flex;
     text-align: justify;
-    padding: 5rem;
+    justify-content: center;
+   width: 100vw;
+  
     .card {
       height: 50rem;
       width: 25rem;
@@ -138,6 +156,7 @@ main {
       justify-content: center;
       align-items: center;
       background-color: $background;
+     
       h2 {
         font-size: 4rem;
         color: $button-color;
@@ -158,6 +177,10 @@ main {
 }
 .sec-3 div:nth-child(1) {
   margin: 5rem;
+  font-size: clamp(1.8rem,6vw, 2.4rem);
+  @include media-breakpoint-down(lg){
+    margin: 0.5rem;
+      }
 }
 .card-sec {
   display: flex;
@@ -179,7 +202,7 @@ footer{
     display: flex;
    gap: 5rem;
     i{
-      font-size: 5rem;
+      font-size: clamp(2rem, 6vw, 5rem);
     }
     li:hover{
       color: $button-color;

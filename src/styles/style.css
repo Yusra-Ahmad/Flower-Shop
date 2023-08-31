@@ -1,9 +1,10 @@
-/* Error: Undefined variable.
- *     ,
- * 140 |       background-color: $background;
- *     |                         ^^^^^^^^^^^
- *     '
- *   src/scss/style.scss 140:25  root stylesheet */
+/* Error: Undefined mixin.
+ *   ,
+ * 5 | /   @include media-breakpoint-down(lg){
+ * 6 | |     width: 100%;
+ * 7 | \   }
+ *   '
+ *   src/scss/style.scss 5:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 140 \2502        background-color: $background;\a     \2502                          ^^^^^^^^^^^\a     \2575 \a   src/scss/style.scss 140:25  root stylesheet";
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502  \250c    @include media-breakpoint-down(lg){\a 6 \2502  \2502      width: 100%;\a 7 \2502  \2514    }\a   \2575 \a   src/scss/style.scss 5:3  root stylesheet";
 }
